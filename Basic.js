@@ -1,6 +1,3 @@
-1 Date
-
-```
 var today = new Date();
 alert(today);
 alert(today.getTime()); //convert today into milli-second
@@ -33,10 +30,8 @@ if(today.getMonth() === 11 && today.getDate() >= 25)
 }
 var oneday = 1000 * 60 * 60 * 24; //oneday in milli-second
 alert(Math.ceil((cmas.getTime() - today.getTime())/oneday) + " days left till next Chrismas");
-```
-2 String
 
-```
+
 var text = "Hello Owen";
 //access char in the string
 var a = text.charAt(1); //e
@@ -59,14 +54,10 @@ alert(text.substring(2, 4)); //startindex - endindex
 alert("abc" == new String("abc"));
 //false, type is not ignored
 alert("abc" === new String("abc"));
-```
-note:
-- alert(typeof "abc"); //string
-- alert(typeof new String("abc")); //object
 
-3 Math
+//alert(typeof "abc"); //string
+//alert(typeof new String("abc")); //object
 
-```
 /*
  * all properties and methods of Math are static.
  * access properties or methods: Math.PI
@@ -83,4 +74,3 @@ alert(Math.pow(2, 4)); //16
 alert(Math.random()); //return random num range [0,1)
 //produce random num between 3 - 10
 alert(Math.random() * (10 - 3) + 3);
-```
